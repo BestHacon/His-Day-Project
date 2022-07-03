@@ -1,0 +1,263 @@
+* {
+    color: #fff;
+    cursor: default;
+}
+body {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    cursor:default;
+    animation: openScene 3s ease 0s 1;
+}
+pre {
+    position: fixed;
+}
+.top {
+    position: absolute;
+    top: 50px;
+}
+.bottom {
+    position: absolute;
+    top: 660px;
+}
+.mid {
+    position: absolute;
+    top: 483px;
+}
+div[class^=link_top]{
+    position: absolute;
+}
+.link_top1 {
+    top: 0;
+    left: 100px;
+}
+.link_top2 {
+    right: 300px;
+}
+.link_top3 {
+    right: 600px;
+}
+.door_top {
+    position: absolute;
+    left: 400px;
+    top: -24px;
+}
+.window_out {
+    position: absolute;
+    top: 120px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.window_in {
+    margin: 10px auto;
+    width: 180px;
+    height: 280px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+.door_auto1 {
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    transform: rotateZ(20deg);
+}
+.door_auto2 {
+    position: absolute;
+    top: 32px;
+    left: 575px;
+    transform: rotateZ(60deg);
+}
+.door_auto3 {
+    position: absolute;
+    top: 112px;
+    left: 517px;
+    transform: rotateZ(-19deg);
+}
+.handle1 {
+    position: absolute;
+    top: 69px;
+    left: 30px;
+    transform: rotateY(-29deg) scale(1.8);
+}
+.handle2 {
+    position: absolute;
+    top: 69px;
+    left: 218px;
+    transform: rotateY(-29deg) scale(1.8);
+}
+.handle3 {
+    position: absolute;
+    top: 69px;
+    left: 867px;
+    transform: rotateY(-29deg) scale(1.8);
+}
+.handle4 {
+    position: absolute;
+    top: 69px;
+    left: 1071px;
+    transform: rotateY(-29deg) scale(1.8);
+}
+.handle5 {
+    position: absolute;
+    top: 69px;
+    left: 1300px;
+    transform: rotateY(-29deg) scale(1.8);
+}
+div[class^=form] {
+    width: 100px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-right: 0;
+}
+.form1 {
+    position: absolute;
+    top: 450px;
+    left: 60px;
+    transform: rotateZ(-5deg);
+}
+.form2 {
+    position: absolute;
+    top: 385px;
+    left: 120px;
+    transform: rotateZ(90deg);
+}
+.component {
+    position: absolute;
+    top: 448px;
+    left: 161px;
+    border: 2px solid #fff;
+    height: 20px;
+    width: 20px;
+    border-left: 0;
+    border-top: 0;
+}
+.form3 {
+    position: absolute;
+    top: 496px;
+    left: 122px;
+    transform: rotateZ(-90deg);
+}
+.form4 {
+    position: absolute;
+    top: 501px;
+    left: 55px;
+    transform: rotateZ(-90deg);
+}
+.chair2 {
+    position: absolute;
+    left: 250px;
+}
+.phone1 {
+    position: absolute;
+    top: 388px;
+    left: 1113px;
+    width: 15px;
+    height: 30px;
+    border: 1px solid #fff;
+    transform: rotate(20deg);
+}
+.screen {
+    width: 11px;
+    height: 23px;
+    margin: 2px auto;
+    border: 1px solid #fff;
+}
+.circle {
+    position: absolute;
+    top: 28px;
+    left: 7px;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    border: 0.5px solid #fff;
+}
+.people1 {
+    position: absolute;
+    top: 248px;
+    left: 983px;
+    transform: scale(1.3);
+}
+.people2 {
+    position: absolute;
+    top: 248px;
+    left: 1133px;
+    transform: scale(1.3);
+}
+.people3 {
+    position: absolute;
+    top: 248px;
+    left: 1283px;
+    transform: scale(1.3);
+}
+.people4 {
+    position: absolute;
+    top: 264px;
+    left: -23px;
+    z-index: 2;
+    transform: scale(1.3);
+}
+.phone2 {
+    position: absolute;
+    top: 410px;
+    left: 1164px;
+    width: 15px;
+    height: 30px;
+    border: 1px solid #fff;
+    transform: rotate(-52deg);
+}
+.phone3 {
+    position: absolute;
+    top: 394px;
+    left: 1410px;
+    width: 15px;
+    height: 30px;
+    border: 1px solid #fff;
+    transform: rotate(65deg);
+}
+.sleep {
+    position: absolute;
+    top: 213px;
+    left: 119px;
+}
+#people01 {
+    position: absolute;
+    top: 293px;
+    left: 244px;
+    transform: translateX(0px);
+}
+.music {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    transform: scale(2);
+}
+.music img {
+    cursor: pointer;
+}
+.text {
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    transform: translate(-50%, 0%);
+    left: 45%;
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    top: 650px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

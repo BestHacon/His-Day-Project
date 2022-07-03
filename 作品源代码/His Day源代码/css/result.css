@@ -1,0 +1,372 @@
+* {
+    color: #fff;
+    font-weight: 700;
+}
+
+body {
+    /* position: relative; */
+    background-color: #000;
+    overflow: hidden;
+    cursor:default;
+    animation: openScene 3s ease 0s 1;
+}
+
+pre {
+    position: fixed;
+}
+
+#people {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    transform: scale(1.2);
+    transition: all 3s;
+    border-radius: 1000px;
+}
+
+.consist {
+    height: 1px;
+    display: inline-block;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg) scale(0);
+    }
+    25% {
+        transform: rotateZ(90deg) scale(0.6);
+    }
+    50% {
+        transform: rotateZ(180deg) scale(0.6);
+    }
+    75% {
+        transform: rotateZ(270deg) scale(0.6);
+    }
+    100% {
+        transform: rotateZ(360deg) scale(0);
+    }
+}
+
+div[class^=flower] {
+    z-index: 100;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    transition: 5s;
+}
+.flowerX {
+    position: absolute;
+    left: 1100px;
+    top: 230px;
+}
+.flower1 {
+    position: absolute;
+    left: 100px;
+    top: 210px;
+    transform: scale(0);
+    animation: rotate 4.1s linear 0.8s infinite ;
+}
+.flower2 {
+    position: absolute;
+    left: 30px;
+    top: 250px;
+    transform: scale(0);
+    animation: rotate 6s linear 1.6s infinite ;
+}
+.flower3 {
+    position: absolute;
+    left: 250px;
+    top: 250px;
+    transform: scale(0);
+    animation: rotate 4.6s linear 0s infinite ;
+}
+.flower4 {
+    position: absolute;
+    left: 300px;
+    top: 200px;
+    transform: scale(0);
+    animation: rotate 5s linear 2.2s infinite;
+}
+.flower5 {
+    position: absolute;
+    left: 350px;
+    top: 260px;
+    transform: scale(0);
+    animation: rotate 4.8s linear 1.2s infinite ;
+}
+
+div[class^=flower] [class^=hua] { 
+    color: rgb(252, 58, 58);
+    Z-index: 200;
+}
+div[class^=flower] .hua {
+    transform: translateX(18px) translateY(10px) scale(0.6);
+}
+.hua1 {
+    z-index: 200;
+    position: absolute;
+    top: -35px;
+    left: 30px;
+    transform: rotateZ(-10deg) scale(0.4);
+}
+.hua2 {
+    z-index: 200;
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    transform: rotateZ(-55deg) scale(0.4);
+}
+.hua3 {
+    
+    position: absolute;
+    top: 35px;
+    left: 22px;
+    transform: rotateZ(-160deg) scale(0.4);
+}
+.hua4 {
+    z-index: 200;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    transform: rotateZ(140deg) scale(0.4);
+}
+.hua5 {
+    z-index: 200;
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    transform: rotateZ(50deg) scale(0.4);
+}
+#trunk{
+	position: absolute;
+	z-index: 0;
+	color:saddlebrown;
+	left: 100px;
+	top: 110px;
+
+}
+
+#leave{
+	position: absolute;
+	z-index: 0;
+	color:green;
+	left: 75px;
+	top: 0px;
+}
+#beHelped1 {
+    position:absolute;
+    top: 250px;
+    left: 1200px;
+    transform: scale(1.2);
+}
+#beHelped2 {
+    position:absolute;
+    top: 250px;
+    left: 900px;
+    transform: scale(1.2);
+}
+#beHelped3 {
+    position:absolute;
+    top: 250px;
+    left: 600px;
+    transform: scale(1.2);
+}
+div[id^=appreciate] {
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 10px;
+    border: 1px solid #fff;
+    border-radius: 55px;
+}
+#appreciate1 {
+    display: none;
+    position: absolute;
+    left: 1130px;
+    top: 180px;
+}
+#appreciate2 {
+    display: none;
+    position: absolute;
+    left: 820px;
+    top: 180px;
+}
+#appreciate3 {
+    display: none;
+    position: absolute;
+    left: 520px;
+    top: 180px;
+}
+@keyframes Foot {
+    0% {}
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {}
+}
+
+#example {
+    position: absolute;
+    left: 1300px;
+    top: 400px;
+    transform: rotateY(-45deg) scale(1.2);
+    transform-style: preserve-3d;
+    perspective: 100px;
+}
+.help {
+    display: none;
+    position: absolute;
+    top: 425px;
+    left: 1325px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 80px;
+    width: 23px;
+    text-align: center;
+    line-height: 20px;
+}
+#award {
+    position: absolute;
+    left: 980px;
+    top: 490px;
+    transform: rotateY(30deg) scale(0.8);
+}
+
+#award pre {
+    color: gold;
+}
+#beHelped1:hover {
+    cursor:pointer !important;
+}
+#beHelped2:hover {
+    cursor:pointer !important;
+}
+#beHelped3:hover {
+    cursor:pointer !important;
+}
+#example:hover {
+    cursor:pointer !important;
+}
+.tree:hover {
+    cursor:default !important;
+}
+.cloud:hover {
+    cursor:grab !important;
+}
+#award:hover {
+    cursor:pointer !important;
+}
+#button:hover {
+    cursor:pointer !important;
+}
+
+#awarder { 
+    display: none;
+    position: absolute;
+    left: 1111px;
+    top: 402px;
+    height: 157px;
+    width: 210px;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 55px;
+}
+
+#button {
+    display: none;
+    position: absolute;
+    left: 1312px;
+    top: 418px;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    line-height: 20px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+}
+
+#table {
+    position: absolute;
+    left: 800px;
+    top: 520px;
+    transform: rotateX(30deg) scale(1);
+    transform-style: preserve-3d;
+}
+
+#ladderLeft {
+    position: absolute;
+    left: 662px;
+    top: 610px;
+}
+#ladderLeft pre {
+    position: fixed;
+}
+#ladderRight {
+    position: absolute;
+    left: 1060px;
+    top: 610px;
+}
+#ladderRight pre {
+    position: fixed;
+}
+.cloud {
+    transition: all 11s;
+    display: block;
+    animation:  cloud 6s linear 0s infinite;
+}
+.cloud:hover {
+    transform: scale(1.4);
+}
+@keyframes cloud {
+    0%{}
+    50%{
+        transform: translate(600px);
+    }
+    100%{
+        transform: translate(1050px);
+    }
+}
+
+#balloon {
+    position: absolute;
+    top: 150px;
+    right: 325px;
+}
+#holder {
+    display: none;
+	opacity:0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	transform: translate(0,0);
+	z-index: 0;
+}
+.text {
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    top: 660px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

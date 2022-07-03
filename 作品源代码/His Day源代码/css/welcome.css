@@ -1,0 +1,144 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	cursor: default;
+}
+
+body{
+	background-color: black;
+	animation: openScene 3s ease 0s 1;
+}
+
+.startGame{
+	color: white;
+	text-align: center;
+	position: fixed;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+}
+
+#startGameText{
+	color: rgb(225, 225, 225,1);
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#mvpeople{
+	width: 88px;
+	position: absolute;
+	cursor: move;
+	bottom: 0%;
+	z-index: 4;
+
+}
+
+#holder {
+	opacity:0.5;
+	position: absolute;
+	/* width: 800px;
+	height: 750px; */
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	z-index: 4;
+}
+
+.word{
+	cursor:default;
+	position: absolute;
+	/* width: 200px;
+	height: 250px; */
+	opacity: 0.2;
+	top: 50%;
+	transform: translate(0%,-50%);
+	font-size: 2000%;
+	white-space: nowrap;/*文字不换行*/
+} 
+
+ #wordh{
+	left: 0%;
+	color: rgba(250, 168, 236,98);
+	/* animation: w 1s ease 4s infinite; */
+}
+
+#wordi{
+	left: 20%;
+	color: rgba(167, 235, 228,92);
+	/* animation: w 1s ease 3.2s infinite; */
+}
+
+#words{
+	left: 30%;
+	color: rgba(140, 141, 212,83);
+	/* animation: w 1s ease 2.4s infinite; */
+}
+
+#wordd{
+	right: 28%;
+	color: rgba(162, 212, 140,83);
+	/* animation: w 1s ease 1.6s infinite; */
+}
+
+#worda{
+	right: 13%;
+	color: rgba(238, 182, 171,93);
+	/* animation: w 1s ease 0.8s infinite; */
+}
+
+#wordy{
+	right: 0%;
+	color: rgba(240, 223, 163,94);
+	/* animation: w 1s ease 0s infinite; */
+} 
+
+@keyframes w {
+    0% {
+        opacity: 0.2;
+    }
+	50%{
+		opacity: 1;
+	}
+    100% {
+		opacity: 0.2;
+    }
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}
+
+#tip{
+	left: 24px;
+	bottom: 180px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	border-radius: 0px 0px 10px 0px;
+	border: 5px solid rgb(240,128,128);
+	border-style: none solid solid none;
+	transform:  rotate(45deg) rotateX(00deg) rotateY(0deg);
+	display: none;
+	animation: w 1s ease 0s infinite;
+}
+
+@keyframes w {
+    0% {
+        opacity: 0.2;
+    }
+	50%{
+		opacity: 1;
+	}
+    100% {
+		opacity: 0.2;
+    }
+}

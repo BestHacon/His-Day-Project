@@ -1,0 +1,347 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	/* cursor: default; */
+}
+
+body{
+	/* width:982px; 
+	height:713px; */
+	background-color: black;
+    animation: openScene 3s ease 0s 1;
+}
+
+#ballon{
+	display: none;
+	position: absolute;
+	width: 75px;
+	height: 200px;
+	z-index: 2;
+}
+
+#mvpeople{
+	position: absolute;
+	width: 88px;
+	left:45%;
+	top:45%;
+	cursor: move;
+	z-index: 2;
+}
+
+#altitudeDiv{
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,0%);
+
+}
+
+#altitudeDiv p{
+	display: inline;
+	font-size: 250%;
+	z-index: 2;
+}
+
+#bgMain,#girl,#mvpeople2,#caption1,#caption2{
+	display: none;
+}
+
+#bgMain{
+	position: fixed;
+	z-index: 3;
+	cursor:default;
+}
+
+#girl{
+	
+	cursor:pointer;
+	z-index: 7;
+	position: absolute;
+	right: 40px;
+	bottom: 130px;
+}
+
+#girl2{
+	z-index: 5;
+	position: absolute;
+	right: 40px;
+	bottom: 130px;
+	display: none;
+	cursor:pointer;
+}
+
+#mvpeople2{
+	position: absolute;
+	z-index: 2;
+	left:40px;
+	bottom: 130px;
+}
+
+#mvpeople3{
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+.foot{
+	position: absolute;
+	z-index: 2;
+	width: 7px;
+	height: 45px;
+	padding-top: 30px;
+	/* white-space:pre; */
+	transform: rotateZ(90deg);
+	display: none;
+	letter-spacing:11px;
+}
+
+#foot2,#foot4{
+	/* 为达到淡入效果，该动画在js中有修改，请注意 */
+	animation: walk 2.3s linear 0s infinite;
+}
+
+#foot1,#foot3{
+	animation: walk 2.3s linear 1.15s infinite;
+}
+
+#caption1{
+	position: absolute;
+	z-index: 4;
+	font-size: 500%;
+	left: 200px;
+	top:100px;
+	transform:  rotate(-76deg) rotateX(30deg) rotateY(0deg);
+	cursor:default;
+}
+
+#caption2{
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 500%;
+	left:1020px;
+	top:190px;
+	transform:  rotate(0deg) rotateX(30deg) rotateY(0deg);
+}
+
+#talking{
+	white-space: nowrap;/*文字不换行*/
+	background-color: gray;
+	transform: translate(-50%,0%);
+	left:50%;
+	display: none;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	bottom: 0;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.but{
+	cursor:pointer;
+	white-space: nowrap;/*文字不换行*/
+	background-color: gray;
+	position: absolute;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	display: none;
+	padding: 3px;
+	bottom: 0;
+	border: 8px;
+	border-style:outset;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+#help{
+	left:30%;
+}
+
+#nohelp{
+	left:60%;
+}
+
+.plant{
+	display: none;
+	cursor:default;
+}
+
+#trunk{
+	position: absolute;
+	z-index: 5;
+	color:saddlebrown;
+	left: 500px;
+	top: 110px;
+
+}
+
+#leave{
+	position: absolute;
+	z-index: 5;
+	color:green;
+	left: 475px;
+	top: 65px;
+}
+
+#grass{
+	position: absolute;
+	z-index: 4;
+	color:green;
+	left: -70px;
+	bottom: 20px;
+}
+
+#flower1{
+	position: absolute;
+	z-index: 4;
+	color:green;
+	right: -50px;
+	bottom: 20px;
+}
+
+#flower2{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 4;
+	color:yellow;
+	right: 180px;
+	bottom: 85px;
+}
+
+#flower3{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	z-index: 3;
+	color:red;
+	right: 180px;
+	bottom: 99px;
+}
+
+/*父元素relative，子元素absolute，
+则子元素会随父元素滚动*/
+#con{
+	position: relative;
+}
+
+#cloud{
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+#caption_tree{
+	background-color: rgb(120, 155, 68);
+	left:33%;
+	top:7.5%;
+	position: absolute;
+	cursor:default;
+	z-index: 6;
+	font-size: 150%;
+	text-align: center;
+	border-radius: 10px;
+	padding: 5px;
+	display: none;
+}
+
+#tip{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	border-radius: 10px 0px 0px 0px;
+	border: 5px solid rgb(240,128,128);
+	border-style: solid none none solid;
+	transform:  rotate(45deg) rotateX(00deg) rotateY(0deg);
+	display: none;
+	animation: w 1s ease 0s infinite;
+}
+
+#tip2_1{
+	right: 30px;
+	top: 110px;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	border-radius: 0px 0px 10px 0px;
+	border: 5px solid rgb(240,128,128);
+	border-style: none solid solid none;
+	transform:  rotate(45deg) rotateX(00deg) rotateY(0deg);
+	display: none;
+	animation: w 1s ease 0s infinite;
+}
+
+#tip2_2{
+	right: 35px;
+	top: 100px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	border-radius: 0px 0px 0px 0px;
+	border: 5px solid rgb(240,128,128);
+	border-style: none solid none solid;
+	transform:  rotate(0deg) rotateX(00deg) rotateY(0deg);
+	display: none;
+	animation: w 1s ease 0s infinite;
+	padding: auto;
+	text-align: center;
+	font-weight:bold;
+	color: rgb(240, 49, 49);
+}
+
+@keyframes w {
+    0% {
+        opacity: 0.2;
+    }
+	50%{
+		opacity: 1;
+	}
+    100% {
+		opacity: 0.2;
+    }
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+		
+    }
+    100% {
+		opacity: 1;
+    }
+}
+
+@keyframes walk {
+    0% {
+        letter-spacing:11px;
+		transform: rotate(90deg);
+    }
+	25%{
+		letter-spacing:12px;
+		transform: rotate(120deg);
+	}
+	50%{
+		letter-spacing:11px;
+		transform: rotate(90deg);
+	}
+	75%{
+		letter-spacing:12px;
+		transform: rotate(60deg);
+	}
+    100% {
+		letter-spacing:11px;
+		transform: rotate(90deg);
+    }
+}

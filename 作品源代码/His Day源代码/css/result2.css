@@ -1,0 +1,435 @@
+* {
+    color: #fff;
+    font-weight: 700;
+}
+body {
+    position: fixed;
+    background-color: #000;
+    overflow: hidden;
+    cursor:default;
+    animation: openScene 3s ease 0s 1;
+}
+pre {
+    position: fixed;
+}
+
+#help {
+    position: absolute;
+    top: 260px;
+    left: 461px;
+    transform: scale(0.6);
+}
+#people {
+    position: absolute;
+    top: 251px;
+    left: 1380px;
+    transform: scale(1);
+    transition: all 3s;
+    border-radius: 1000px;
+    /* box-shadow: 100px 0px 35px 1px #fff; */
+}
+.consist {
+    height: 1px;
+    display: inline-block;
+}
+@keyframes Foot {
+    0% {}
+
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {}
+}
+.bicycle .sit {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    transform: translateX(1208px) translateY(214px) scale(0.45);
+}
+.bicycle .line1 {
+    z-index: 2;
+    transform: translateX(743px) translateY(432px) skew(-0.09turn,12deg) scale(0.5);
+}
+.bicycle .line2 {
+    z-index: 2;
+    transform: translateX(662px) translateY(679px) skew(-0.09turn,45deg) scale(0.4);
+}
+.bicycle .line3 {
+    z-index: 2;
+    transform: translateX(942px) translateY(124px) skew(-0.09turn,-23deg)  scale(0.70);
+}
+.bicycle .head_middle {
+    z-index: 2;
+    transform: translateX(719px) translateY(315px) rotateX(2deg)  scale(0.4);
+}
+.bicycle .head_top {
+    transform: translateX(712px) translateY(217px) skew(-0.09turn,-16deg) rotateY(2deg)  scale(0.4);
+}
+.bicycle .wheel1 {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(247px) translateX(144px) rotateX(12deg) rotateY(39deg) scale(0.66);
+}
+.bicycle .wheel2 {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(257px) translateX(320px) rotateX(12deg) rotateY(39deg) scale(0.66);
+}
+.bicycle .foot_plate {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(231px) translateX(1201px) rotateX(12deg) rotateY(39deg) scale(0.66);
+}
+.car_front {
+    z-index: 100;
+    width: 200px;
+    height: 216px;
+    position: absolute;
+    top: 112px;
+    left: 787px;
+    transform-origin: bottom center;
+    transform: skew(-0.05turn, 15deg) rotateY(60deg) scale(0.5);
+}
+.car_top {
+    z-index: 100;
+    position: absolute;
+    top: 120px;
+    left: 1021px;
+    transform: rotateX(-52deg) rotateY(26deg) rotateZ(-5deg) skew(-183.7turn, 48deg) scale(0.3);
+}
+.car_left {
+    z-index: 100;
+    position: absolute;
+    top: 266px;
+    left: 911px;
+    transform-origin: bottom center;
+    transform: rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+div[class^=wheel] {
+    z-index: 2;
+    position: absolute;
+    transform: rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+.wheel1 {
+    top: 233px;
+    left: 1029px;
+}
+.wheel2 {
+    top: 283px;
+    left: 961px;
+}
+.wheel3 {
+    top: 230px;
+    left: 974px;
+}
+.wheel4 {
+    top: 261px;
+    left: 916px;
+}
+.car_number {
+    z-index: 3;
+    position: absolute;
+    top: 302px;
+    left: 869px;
+    text-align: center;
+    width: 83px;
+    height: 20px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    transform: rotateY(30deg) rotateZ(13deg) scale(0.8);
+}
+.car2 div[class^=wheel] {
+    transform: translateX(170px) rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+.car2 .car_front {
+    transform: translateX(170px) skew(-0.05turn, 15deg) rotateY(60deg) scale(0.5);
+}
+.car2 .car_left {
+    transform: translateX(168px) rotateX(-30deg) rotateY(55deg) scale(0.50);
+}
+.car2 .car_number {
+    transform: translateX(168px) rotateY(30deg) rotateZ(13deg) scale(0.8);
+}
+.car2 .car_top {
+    transform: translateX(170px) rotateX(-52deg) rotateY(26deg) rotateZ(-5deg) skew(-183.7turn, 48deg) scale(0.3);
+}
+.store {
+    width: 700px;
+    height: 500px;
+}
+.store .top {
+    width: 606px;
+    transform: translateX(-87px) translateY(-15px) rotate(-20deg) rotateX(65deg) scale(1.5);
+}
+.store .name {
+    width: 500px;
+    height: 85px;
+    transform: translateX(95px) translateY(191px) rotate(-20deg) rotateX(30deg);
+}
+.store .decorateL {
+    width: 400px;
+    transform: translateX(48px) translateY(326px) rotate(130deg) rotateY(20deg) scale(0.5);
+
+}
+.store .door {
+    width: 500px;
+    transform: translateX(282px) translateY(158px) rotate(-12deg) scale(0.8);
+}
+.store .lineTop {
+    transform: translateX(139px)  translateY(161px) rotate(-19deg) rotateX(10deg) scale(0.46);
+}
+.store .lineBot {
+    transform: translateX(156px)  translateY(287px) rotate(-19deg) rotateX(10deg) scale(1.05);
+}
+.store .line {
+    transform: translateX(301px) translateY(147px) rotate(80deg) scale(0.54);
+}
+.store .text1 {
+    font-size: 45px;
+    position: absolute;
+    top: 185px;
+    left: 280px;
+    transform: rotate(-19deg);
+}
+.store .text2 {
+    font-size: 40px;
+    position: absolute;
+    top: 241px;
+    left: 271px;
+    transform: rotate(-19deg);
+}
+.transport .light {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+}
+.rlight {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 687px;
+}
+.roadL {
+    transform: translateX(-276px) rotate(-38deg);
+}
+.roadR {
+    transform: translateX(124px) rotate(-55deg);
+}
+.roadM {
+    transform: translateX(47px) rotate(-47deg);
+}
+.logo {
+    transform: translateX(-371px) translateY(209px) rotateX(28deg) skew(0.01turn,-48deg) rotateY(53deg) rotateZ(40deg) scale(0.3);
+}
+.bicycle2 .sit {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    transform: translateX(308px) translateY(214px) scale(0.45);
+}
+.bicycle2 .line1 {
+    z-index: 2;
+    transform: translateX(-159px) translateY(432px) skew(-0.09turn,12deg) scale(0.5);
+}
+.bicycle2 .line2 {
+    z-index: 2;
+    transform: translateX(-241px) translateY(679px) skew(-0.09turn,45deg) scale(0.4);
+}
+.bicycle2 .line3 {
+    z-index: 2;
+    transform: translateX(41px) translateY(127px) skew(-0.09turn,-23deg)  scale(0.70);
+}
+.bicycle2 .head_middle {
+    z-index: 2;
+    transform: translateX(-179px) translateY(318px) rotateX(2deg)  scale(0.4);
+}
+.bicycle2 .head_top {
+    transform: translateX(-189px) translateY(227px) skew(-0.09turn,-16deg) rotateY(2deg)  scale(0.4);
+}
+.bicycle2 .wheel1 {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(267px) translateX(-722px) skew(-0.09turn,32deg) rotateX(-10deg) rotateY(43deg) scale(0.56);
+}
+.bicycle2 .wheel2 {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(256px) translateX(-581px) rotateX(12deg) rotateY(39deg) scale(0.66);
+}
+.bicycle2 .foot_plate {
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    transform: translateY(303px) translateX(187px) rotateX(-15deg) rotateY(39deg) scale(0.66);
+}
+.repair {
+    width: 300px;
+    height: 300px;
+    font-size: 50px;
+    transform: translateX(238px) translateY(-403px) rotateZ(-22deg);
+}
+.indi_store {
+    position: relative;
+    top: -1434px;
+    left: 150px;
+    transform: rotateZ(-34deg)
+}
+.indi_school {
+    position: relative;
+    top: -998px;
+    left: 284px;
+    transform: rotateZ(-55deg);
+}
+.indicate {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-right: 0px;
+}
+.angle {
+    position: absolute;
+    top: 500px;
+    left: 282px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-width: 2px;
+    transform: rotateZ(-43deg);
+}
+.bar {
+    position: absolute;
+    top: 525px;
+    left: 218px;
+    height: 93px;
+    width: 10px;
+    border: 2px solid #fff;
+    transform: rotateZ(30deg);
+    border-top: 0;
+}
+.indi_school .indicate {
+    position: absolute;
+    top: 345px;
+    left: 291px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-left: 0px;
+}
+.indi_school .angle {
+    position: absolute;
+    top: 347px;
+    left: 280px;
+    width: 34px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-top: 0px;
+    border-right: 0px;
+    border-width: 2px;
+    transform: rotateZ(46deg);
+}
+.indi_school .bar {
+    position: absolute;
+    top: 367px;
+    left: 306px;
+    height: 78px;
+    width: 10px;
+    border: 2px solid #fff;
+    transform: rotateZ(40deg);
+    border-top: 0;
+}
+.help_repair {
+    display: none;
+    position: absolute;
+    top: 163px;
+    left: 533px;
+    width: 150px;
+    height: 120px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.help_car {
+    display: none;
+    position: absolute;
+    top: 163px;
+    left: 919px;
+    width: 150px;
+    height: 130px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.music {
+    position: absolute;
+    top: 38px;
+    right: 374px;
+    transform: scale(2);
+}
+.tempHelp {
+    transition: all 3s;
+    position: absolute;
+    top: 110px;
+    right: 306px;
+}
+.glass {
+    position: absolute;
+    top: 125px;
+    right: 215px;
+    transform: rotateY(-150deg) scale(0.5);
+}
+#holder {
+    display: none;
+	opacity:0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/* left:200px; */
+	top:0px;
+	transform: translate(0,0);
+	z-index: 0;
+}
+.text {
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    transform: translate(-50%, 0%);
+    left: 40%;
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    bottom: 140px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

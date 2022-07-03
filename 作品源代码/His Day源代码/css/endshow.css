@@ -1,0 +1,135 @@
+﻿*{
+    z-index:1;
+    background-color:black;
+    color:white;
+    cursor: default;
+}
+body{
+    animation: openScene 3s ease 0s 1;
+}
+
+ul{
+    position:fixed;
+    bottom:200px;
+}
+li {
+    display: inline-block;
+    padding: 50px;
+}
+#end1 {
+    border-color: black;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 20px;
+    padding:5px;
+}
+    #end1 > img {
+        width:350px;
+        height:235px;
+        display:block;
+    }
+    #end1 > div {
+        width:100%;
+        text-align:center;
+        font-weight:500;
+    }
+#end2 {
+    border-color: black;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 5px;
+}
+#end2 > img {
+        width: 350px;
+        height: 235px;
+        display: block;
+}
+#end2 > div {
+    width: 100%;
+    text-align: center;
+}
+#end3 {
+    border-color: black;
+    border-width: 1px;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 5px;
+}
+#end3 > img {
+    width: 350px;
+    height: 235px;
+    display: block;
+}
+    #end3 > div {
+        width:100%;
+        text-align:center;
+    }
+@keyframes w {
+    0% {
+        border-color: rgb(166,247,255,0);
+    }
+
+    25% {
+        border-color: rgb(151,232,217,0.5);
+    }
+
+    50% {
+        border-color: rgb(178,255,219,1);
+    }
+    75% {
+        border-color: rgb(151,232,171,0.5);
+    }
+    100% {
+        border-color: rgb(169,255,166,0);
+    }
+}
+#end1no{
+    z-index:10;
+    bottom:420px;
+    left:220px;
+    position:fixed;
+    font-size:200px;
+    line-height:0px;
+}
+#end2no {
+    z-index: 10;
+    bottom: 420px;
+    left: 700px;
+    position: fixed;
+    font-size: 200px;
+    line-height: 0px;
+}
+#end3no {
+    z-index: 10;
+    bottom: 420px;
+    left: 1160px;
+    position: fixed;
+    font-size: 200px;
+    line-height: 0px;
+}
+#tim{
+    position:fixed;
+    font-size:50px;
+    bottom:150px;
+    left:580px;
+}
+#out {
+    font-size: 25px;
+    border-width: 3px;
+    border: groove;
+    border-color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+    background-color: rgb(255,105,180,0.5);
+    cursor: pointer;
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

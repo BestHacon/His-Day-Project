@@ -1,0 +1,234 @@
+﻿#people01 {
+    bottom: 220px;
+    left: 250px;
+    z-index: 2;
+}
+#choice {
+    color:#99FF99;
+   bottom:20px;
+    font-size:25px;
+    list-style:none;
+}
+.choice > li {
+    display:inline;
+    padding-left: 200px;
+}
+* {
+    cursor: default;
+    position: fixed;
+    color: white;
+}
+.rain {/*z-index大的覆盖小的*/
+right:-500px;
+top:-900px;
+z-index:-10;
+}
+#umbrella1 {
+    left: 300px;
+    bottom: 80px;
+    z-index:-11;
+}
+body{
+    background:black;
+    animation: openScene 3s ease 0s 1;
+}
+#people02 {
+    bottom: 500px;
+    left: 850px;
+    z-index: -9;
+}
+#people03 {
+    bottom: 70px;
+}
+#louti {
+    bottom: 0px;
+    transform: rotate(-10deg) rotateY(50deg);
+}
+#people04 {
+    bottom: 140px;
+    left: 1000px;
+    z-index: 10;
+    cursor:pointer;
+}
+#umbrella2 {
+    left: 50px;
+    top: 400px;
+    z-index: -11;
+}
+#umbrella3 {
+    left: 900px;
+    top: 0px;
+    z-index: -11;
+}
+#choice1 {
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: gray;
+    text-align: center;
+    left: 30%;
+    z-index: 10;
+    border-radius: 4px;
+    border: 8px outset;
+    border-color: white;
+    padding: 3px;
+    bottom:5px;
+}
+#choice2 {
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: gray;
+    text-align: center;
+    left: 60%;
+    z-index: 10;
+    border-radius: 4px;
+    border: 8px outset;
+    border-color: white;
+    padding: 3px;
+    bottom: 5px;
+}
+#talking {
+    bottom: 0;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+    white-space: nowrap;
+    transform: translate(-50%,0%);
+    left: 50%;
+    background-color: gray;
+    z-index:10;
+}
+.crown{
+    color:lawngreen;
+    z-index:-10;
+}
+.trunk {
+    color: saddlebrown;
+    z-index: -10;
+}
+.tree {
+    font-size: 25px;
+    z-index: -10;
+}
+#trunk1 {
+    left: 1280px;
+    bottom: 115px;
+    transform: rotate(-15deg);
+}
+#crown1 {
+    right: 50px;
+    bottom: 300px;
+    transform: rotate(-15deg);
+}
+#trunk2{
+    left: 740px;
+    bottom: 350px;
+    transform: rotate(-15deg);
+}
+
+#crown2 {
+    left: 550px;
+    bottom: 530px;
+    transform: rotate(-15deg);
+}
+#roof { /*建筑统一z-index:-1*/
+    color: indianred;
+    bottom: 550px;
+    left: -100px;
+    opacity: 0.4;
+    font-size: 40px;
+    z-index: -1;
+    transform: rotate(-20deg) rotateY(50deg);
+}
+#roofleft {
+    color: indianred;
+    bottom: 420px;
+    left: 180px;
+    opacity: 0.4;
+    font-size: 40px;
+    z-index: -1;
+    transform: rotate(-20deg) rotateY(50deg);
+}
+#wall {
+    background-color: white;
+    bottom: 190px;
+    left: 270px;
+    opacity: 0.4;
+    width: 500px;
+    height: 350px;
+    z-index: -1;
+    transform: rotate(-20deg) rotateY(50deg);
+}
+#wallleft {
+    background-color: white;
+    bottom: 125px;
+    left: 90px;
+    opacity: 0.4;
+    width: 500px;
+    height: 350px;
+    z-index: -1;
+    transform: rotate(-20deg) rotateY(85deg);
+}
+#windor {
+    bottom: 160px;
+    left: 310px;
+    opacity: 0.4;
+    font-size: 30px;
+    color: skyblue;
+    z-index: -1;
+    transform: rotate(-20deg) rotateY(50deg);
+    cursor:pointer;
+}
+#road {
+    font-size: 20px;
+    left: 390px;
+    bottom: -80px;
+    opacity: 0.4;
+    line-height:50px;
+    transform:rotate(30deg);
+    z-index:-10;
+}
+#talking1 {
+    left: 300px;
+    bottom: 100px;
+    font-size: 25px;
+    width: 500px;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px;
+    z-index: -5;
+    background-color: rgb(190,190,190,0.5);
+}
+#talking2 {
+    left: 600px;
+    bottom: 500px;
+    font-size: 25px;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px;
+    z-index: -5;
+    background-color: rgb(190,190,190,0.5);
+}
+#talking3 {
+    left: 700px;
+    bottom: 100px;
+    font-size: 25px;
+    width: 500px;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: white;
+    padding: 5px;
+    z-index: -5;
+    background-color: rgb(190,190,190,0.5);
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

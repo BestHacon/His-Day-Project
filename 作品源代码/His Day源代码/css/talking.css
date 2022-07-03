@@ -1,0 +1,283 @@
+﻿#people01{
+bottom:250px;
+left:600px;
+z-index:2;
+}
+#left01 {
+    left: 680px;
+    bottom: 25px;
+    /*letter-spacing这个可以控制横向文字距离*/
+    height: 68px;
+    line-height: 14px;
+}
+#right01 {
+    left: 690px;
+    bottom: 25px;
+    line-height: 9px;
+    height: 68px;
+}
+* {
+    cursor: default;
+    position: fixed;
+    color: white;
+}
+body{
+    background:black;
+    animation: openScene 3s ease 0s 1;
+}
+#people02{
+    bottom:240px;
+    left:670px;
+}
+#left02 {
+    left: 750px;
+    bottom: 25px;
+    /*letter-spacing这个可以控制横向文字距离*/
+    height: 68px;
+    line-height: 9px;
+}
+
+#right02 {
+    left: 761px;
+    bottom: 25px;
+    line-height: 14px;
+    height: 68px;
+}
+#talking {
+    bottom: 0;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+    white-space: nowrap;
+    transform: translate(-50%,0%);
+    left: 50%;
+    background-color: gray;
+    z-index:10;
+}
+#road{
+    color:lavender;
+}
+#sun{
+    color:gold;
+    left:800px;
+}
+#trunk1 {
+    z-index: 5;
+    color: saddlebrown;
+    left: 100px;
+    bottom: 350px;
+}
+#leave1 {
+    z-index: 4;
+    color: green;
+    left: 70px;
+    bottom: 450px;
+}
+#trunk2 {
+    z-index: 5;
+    color: saddlebrown;
+    left: 150px;
+    bottom: 110px;
+}
+
+#leave2 {
+    z-index: 4;
+    color: green;
+    left: 120px;
+    bottom: 250px;
+}
+#trunk3 {
+    z-index: 5;
+    color: saddlebrown;
+    left: 300px;
+    bottom: 200px;
+}
+
+#leave3 {
+    z-index: 4;
+    color: green;
+    left: 300px;
+    bottom: 320px;
+}
+#trunk4{
+    z-index: 5;
+    color: saddlebrown;
+    left: 1200px;
+    bottom: 400px;
+}
+
+#leave4 {
+    z-index: 4;
+    color: green;
+    left: 1200px;
+    bottom: 500px;
+}
+#trunk5 {
+    z-index: 5;
+    color: saddlebrown;
+    left: 900px;
+    bottom: 250px;
+}
+
+#leave5{
+    z-index: 4;
+    color: green;
+    left: 870px;
+    bottom: 340px;
+}
+.grass >pre{
+    z-index: 4;
+    color: green;
+}
+#grass1 {
+    left: 1100px;
+    bottom: 220px;
+}
+#grass2 {
+    left: 1000px;
+    bottom: 20px;
+}
+#grass3 {
+    left: 800px;
+    bottom: 20px;
+}
+#grass4 {
+    left: -70px;
+    bottom: 20px;
+}
+#grass5 {
+    left: 130px;
+    bottom: 20px;
+}
+#grass6 {
+    left: 330px;
+    bottom: 20px;
+}
+#grass7 {
+    left: 200px;
+    bottom: 100px;
+}
+#grass8 {
+    left: 900px;
+    bottom: 100px;
+}
+#grass9 {
+    left: 400px;
+    bottom: 100px;
+}
+#grass10 {
+    left: 200px;
+    bottom: 100px;
+}
+#flower01 {
+    z-index: 4;
+    color: green;
+    left: 1000px;
+    bottom: 140px;
+}
+
+#flower02 {
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    color: yellow;
+   left: 1000px;
+    bottom: 185px;
+}
+
+#flower03 {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    color: red;
+    left:1000px;
+    bottom: 200px;
+}
+#flower11 {
+    z-index: 4;
+    color: green;
+   left: 1250px;
+    bottom: 20px;
+}
+
+#flower12 {
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    color: yellow;
+    left: 1250px;
+    bottom: 85px;
+}
+
+#flower13 {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    color: red;
+    left: 1250px;
+    bottom: 99px;
+}
+#flower21 {
+    z-index: 4;
+    color: green;
+   left: 350px;
+    bottom: 220px;
+}
+
+#flower22 {
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    color: yellow;
+    left: 350px;
+    bottom: 250px;
+}
+
+#flower23 {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    color: red;
+    left: 350px;
+    bottom: 270px;
+}
+#flower31 {
+    z-index: 4;
+    color: green;
+    left: -50px;
+    bottom: 350px;
+}
+
+#flower32 {
+    width: 100px;
+    height: 100px;
+    z-index: 4;
+    color: yellow;
+    left: -50px;
+    bottom:390px;
+}
+
+#flower33 {
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    color: red;
+    left: -50px;
+    bottom: 405px;
+}
+#road {
+    left: 600px;
+    bottom: 0px;
+    opacity: 0.4;
+    transform: rotateX(50deg);
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

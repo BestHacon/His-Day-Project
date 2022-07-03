@@ -1,0 +1,289 @@
+* {
+    cursor: default;
+}
+
+body {
+    cursor: default;
+    animation: openScene 3s ease 0s 1;
+}
+pre {
+    position: fixed;
+}
+.rlight .Rred {
+    background-color: rgb(214, 21, 21);
+    /* background-color: rgb(103, 25, 25); */
+}
+
+.rlight .Ryellow {
+    background-color: rgb(97, 71, 36);
+    animation: twinkle 0s linear 0s infinite;
+}
+
+.rlight .Rgreen {
+    background-color: rgb(8, 59, 23);
+    /* background-color: rgb(29, 221, 86); */
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        background-color: rgba(236, 170, 84, 0);
+    }
+}
+
+.bus {
+    position: absolute;
+    top: 187px;
+    left: 921px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid #fff;
+    transform: rotateZ(14deg);
+}
+
+.chair {
+    position: relative;
+    top: -545px;
+    left: 734px;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(30deg) rotateY(-35deg) scale(0.6);
+}
+
+div[class^=board] {
+    width: 100px;
+    height: 15px;
+    border: 1px solid #000;
+    background-color: rgb(236, 236, 236);
+}
+
+.chair .board1 {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.chair .board2 {
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.chair .board3 {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 75px;
+    height: 23px;
+    transform: rotateZ(90deg);
+}
+
+.chair .board4 {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    width: 75px;
+    height: 23px;
+    transform: rotateZ(90deg);
+}
+
+.chair .board5 {
+    z-index: 3;
+    position: absolute;
+    top: 41px;
+    left: 57px;
+    width: 100px;
+    height: 70px;
+    transform: rotateX(68deg) skew(0.02turn, 2deg);
+}
+
+.chair .board6 {
+    z-index: 0;
+    position: absolute;
+    top: 75px;
+    left: 48px;
+    width: 60px;
+    height: 23px;
+    background-color: rgb(206, 201, 201);
+    transform: rotateZ(90deg);
+}
+
+.chair .board7 {
+    z-index: 0;
+    position: absolute;
+    top: 75px;
+    left: 94px;
+    width: 60px;
+    height: 23px;
+    background-color: rgb(206, 201, 201);
+    transform: rotateZ(90deg);
+}
+
+.chair .board8 {
+    z-index: 2;
+    position: absolute;
+    top: 95px;
+    left: 65px;
+    width: 42px;
+    height: 21px;
+    transform: rotateZ(90deg);
+}
+
+.chair .board9 {
+    z-index: 2;
+    position: absolute;
+    top: 93px;
+    left: 115px;
+    width: 42px;
+    height: 21px;
+    transform: rotateZ(90deg);
+}
+
+#people01 {
+    z-index: 100;
+    position: absolute;
+    top: 96px;
+    left: 848px;
+    transform: translateX(0px);
+}
+
+#holder {
+    display: none;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    transform: translate(0, 0);
+    z-index: 0;
+}
+
+.lable_bus {
+    position: absolute;
+    top: 18px;
+    left: 970px;
+    transform: rotateY(-51deg) scale(0.5);
+}
+
+.lable_bus .out {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+}
+
+.lable_bus .in {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 14px;
+    left: 14px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.bus_base {
+    position: absolute;
+    top: 69px;
+    left: 966px;
+    transform: rotateY(-34deg) scale(0.55);
+}
+.bus_station {
+    position: absolute;
+    top: 80px;
+    left: 708px;
+    transform: rotateY(-50deg) rotateX(-4deg) skew(-0.01turn,-13deg) scale(0.8);
+}
+.indi_school {
+    position: relative;
+    top: -998px;
+    left: 284px;
+    transform: rotateZ(-55deg);
+}
+.bar {
+    position: absolute;
+    top: 225px;
+    left: 418px;
+    height: 93px;
+    width: 10px;
+    border: 2px solid #fff;
+    transform: rotateZ(30deg);
+    border-top: 0;
+}
+.indi_school .indicate {
+    position: absolute;
+    top: 275px;
+    left: 491px;
+    width: 100px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-left: 0px;
+}
+.indi_school .angle {
+    position: absolute;
+    top: 276px;
+    left: 480px;
+    width: 34px;
+    height: 30px;
+    border: 2px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    border-top: 0px;
+    border-right: 0px;
+    border-width: 2px;
+    transform: rotateZ(46deg);
+}
+.indi_school .bar {
+    position: absolute;
+    top: 298px;
+    left: 506px;
+    height: 78px;
+    width: 10px;
+    border: 2px solid #fff;
+    transform: rotateZ(40deg);
+    border-top: 0;
+}
+.music img {
+    cursor: pointer;
+}
+.car {
+    transform: translate(0px,-550px);
+}
+.text {
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    top: 660px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}

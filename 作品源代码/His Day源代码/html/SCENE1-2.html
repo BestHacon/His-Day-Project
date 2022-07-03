@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+  <!-- 强制浏览器的渲染方式，默认使用chrome来渲染，然后再按照IE该浏览器的最新版本来渲染 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge，chrome=1">
+	<title>SCENE1-2</title>
+	<link type="text/css" rel="stylesheet" href="../css/SCENE1-2.css" />
+	<script src="../js/jquery-1.11.0.min.js" type="text/javascript"></script>
+</head>
+<body style="overflow:hidden" onload="rightPeo()">
+  <div onclick="movePeo()">
+    <pre id="mvpeople">
+      **
+    *    *
+    *    *  
+      **   
+    ****** 
+  *   **   *
+ *    **   *
+    *    *
+   *      *
+  *        *
+     </pre>
+  </div>
+  <div id="waiter1">
+    <pre >
+      **
+    *    *
+    *    *
+      **   
+    ****** 
+  *   **   *
+   *  **    *
+     </pre>
+  </div>
+  <div id="waiter2">
+    <pre >
+      **
+    *    *
+    *    *
+      **   
+    ****** 
+  *   **   *
+  *   **   *
+     </pre>
+  </div>
+  <div id="waiter3">
+    <pre >
+      * *
+    *     *
+    *     *
+      * *   
+   *********
+  *   ***    *
+   *  ***     *
+     </pre>
+  </div>
+  <div id="wall1">
+    <pre>
+                                        *                                                                                                                                                                                                      *
+                                         *                                                                                                                                                                                                     *
+                                          *                                                                                                                                                                                                    *
+                                           *                                                                                                                                                                                                   *
+                                            *                                           *****************************                                              *****************************                                               *
+                                             *                                          *                           *                                              *                           *                                               *
+                                              *                                         *                           *                                              *                           *                                               *
+                                               *                                        *                           *                                              *                           *                                               *
+                                                *                                       *                           *                                              *                           *                                               *
+                                                 *                                      *                           *                                              *                           *                                               *
+                                                  *                                     *                           *                                              *                           *                                               *
+                                                   *                                    *                           *                                              *                           *                                               *
+                                                    *                                   *****************************                                              *****************************                                               *
+                                                     *                                                                                                                                                                                         *
+                                                      *                                                                                                                                                                                        *
+                                                       *                                                                                                                                                                                       *
+                                                        *                                                                                                                                                                                      *
+                                                         ***************************************************************************************************************************************************************************************
+                                                        *
+                                                       *
+                                                      *
+                                                     *
+                                                    *
+                                                   *
+                                                  *
+                                                 *
+                                                *
+                                               *
+                                              *
+                                             *
+                                            *
+                                           *
+                                          *
+                                         *
+                                        *
+                                       *
+                                      *
+                                     *
+                                    *
+                                   *
+                                  *
+                                 *
+                                *
+                               *
+                              *
+                             *
+                            *
+                           *
+                          *
+</pre>
+  </div>
+  <div id="foodWin">
+    <pre>
+***********************************
+*                                 *
+*                                 *
+***********************************
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+*                                 *
+***********************************
+    </pre>
+  </div>
+  <div class="word" id="word1">豪华套餐</div>
+  <div class="word" id="word2">特色窗口</div>
+  <div class="word" id="word3">经济套餐</div>
+  <div id="aimpeople">
+    <pre>
+      **
+    *    *
+ *  *    *   
+  *   **    
+    ******  
+      **   *
+      **   *
+    *    *
+   *      *
+  *        *   
+    </pre>
+  </div>
+  <div>
+  <pre id="people1">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div>
+  <pre id="people2">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div>
+  <pre id="people3">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div>
+  <pre id="people4">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div>
+  <pre id="people5">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div>
+  <pre id="people6">
+    **
+  *    *
+  *    *  
+    **   
+  ****** 
+*   **   *
+*   **   *
+  *    *
+  *    *
+  *    *
+   </pre>
+</div>
+<div >
+  <pre class="people_2" id="people21">
+     **
+   *    *
+   *    *  
+     **   
+   ****** 
+ *   **   *
+*    **    *
+   *    *
+  *      *
+ *        *
+   </pre>
+</div>
+<div >
+  <pre class="people_2" id="people25">
+     **
+   *    *
+   *    *  
+     **   
+   ****** 
+ *   **   *
+*    **    *
+   *    *
+  *      *
+ *        *
+   </pre>
+</div>
+<div >
+  <pre class="people_2" id="people22">
+     **
+   *    *
+   *    *  
+     **   
+   ****** 
+ *   **   *
+*    **    *
+   *    *
+  *      *
+ *        *
+   </pre>
+</div>
+<div >
+  <pre class="people_2" id="people23">
+     **
+   *    *
+   *    *  
+     **   
+   ****** 
+ *   **   *
+*    **    *
+   *    *
+  *      *
+ *        *
+   </pre>
+</div>
+<div >
+  <pre class="people_2" id="people24">
+     **
+   *    *
+   *    *  
+     **   
+   ****** 
+ *   **   *
+*    **    *
+   *    *
+  *      *
+ *        *
+   </pre>
+</div>
+<div id="desk">
+  <pre >
+    ****************  
+  *                  * 
+  *                  *  
+    ****************     
+    *              *
+   *                *
+  *                  *
+  </pre>
+</div>
+
+<div id="desk2">
+  <pre >
+     ****************
+   *                  *
+   *                  *
+     ****************
+     *              *
+    *                *
+   *                  *
+   </pre>
+</div>
+<div id="caption1"></div>
+<div id="tip"></div>
+<div id="talking"></div>
+<div id="toptalking"></div>
+<button class="but" id="help" onclick="buthelp()">肯定要帮！</button>
+<button class="but" id="nohelp"onclick="butnohelp()" >还是算了~</button>
+	<script type="text/javascript" src="../js/SCENE1-2.js"></script>
+</body>
+</html>

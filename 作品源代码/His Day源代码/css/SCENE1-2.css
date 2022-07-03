@@ -1,0 +1,339 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	/* cursor: default; */
+}
+
+body{
+	background-color: black;
+	animation: openScene 2s ease 0s 1;
+}
+
+#mvpeople{
+	position: absolute;
+	width: 88px;
+	left: 450px;
+	top:350px;
+	cursor: move;
+	z-index: 4;
+}
+
+#talking{
+	white-space: nowrap;/*文字不换行*/
+	background-color: gray;
+	transform: translate(-50%,0%);
+	left:50%;
+	display: none;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	bottom: 0;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#baMain{
+	
+	cursor: default;
+}
+
+#wall1{
+    position: absolute;
+    z-index: 1;
+	cursor: default;
+}
+
+.word{
+    position: absolute;
+    z-index: 2;
+	cursor: default;
+
+}
+
+#word1{
+    left: 590px;
+    top: 10px;
+    font-size: 200%;
+	cursor: default;
+}
+
+#word2{
+    left: 1070px;
+    top: 10px;
+    font-size: 200%;
+	cursor: default;
+}
+
+#word3{
+    position: absolute;
+    z-index: 2;
+    left: 33px;
+	top:225px;
+    transform:  rotate(-55deg) rotateX(0deg) rotateY(00deg);
+    font-size: 200%;
+	cursor: default;
+}
+
+#foodWin{
+    position: absolute;
+    z-index: 2;
+    left: 60px;
+	top:180px;
+    transform:  rotate(-55deg) rotateX(0deg) rotateY(00deg);
+	cursor: default;
+}
+
+#aimpeople{
+    cursor:pointer;
+    z-index: 3;
+    position: absolute;
+    left: 350px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people1{
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 550px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people2{
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 650px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people3{
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 750px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people4{
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 850px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people5{
+	display: none;
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 950px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#people6{
+	display: none;
+    cursor:default;
+    z-index: 2;
+    position: absolute;
+    left: 1050px;
+	top:350px;
+    transform:  rotate(0deg) rotateX(0deg) rotateY(00deg);
+}
+
+#waiter1{
+	position: absolute;
+	z-index: 2;
+	left: 1070px;
+	top:75px;
+	cursor: default;
+}
+
+#waiter2{
+	position: absolute;
+	z-index: 2;
+	left: 613px;
+	top:75px;
+	cursor: default;
+}
+
+#waiter3{
+	position: absolute;
+	z-index: 3;
+	left: 130px;
+	top:250px;
+	font-size: larger;
+	transform:  rotate(-54deg) rotateX(00deg) rotateY(0deg);
+	cursor: default;
+}
+
+#talking{
+	white-space: nowrap;	/*文字不换行*/
+	background-color: gray;
+	transform: translate(-50%,0%);
+	left:50%;
+	display: none;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	bottom: 0;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.but{
+	cursor:pointer;			/*变为手，预示点击 */
+	white-space: nowrap;	/*文字不换行*/
+	background-color: gray;
+	position: absolute;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	display: none;
+	padding: 3px;
+	bottom: 0;
+	border: 8px;
+	border-style:outset;
+	border-radius: 4px;
+}
+
+#help{
+	left:30%;
+}
+
+#nohelp{
+	left:60%;
+}
+
+.people_2{
+	cursor:default;
+    z-index: 2;
+    position: absolute;
+}
+
+#people21{
+
+    left: 1100px;
+	top:250px;
+}
+
+#people22{
+
+    left: 1070px;
+	top:300px;
+}
+
+#people23{
+
+    left: 1040px;
+	top:350px;
+}
+
+#people24{
+
+    left: 1010px;
+	top:400px;
+}
+
+#people25{
+
+    left: 980px;
+	top:450px;
+}
+
+#toptalking{
+	white-space: nowrap;/*文字不换行*/
+	background-color: gray;
+	left:25%;
+	top:39%;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 200%;
+	text-align: center;
+	border-radius: 10px;
+	padding: 5px;
+	display: none;
+}
+
+#desk{
+	position: absolute;
+	z-index: 5;
+	/* display: none; */
+	cursor:default;
+	bottom:50px;
+	right: 50px;
+}
+
+#desk2{
+	position: absolute;
+	z-index: 5;
+	/* display: none; */
+	cursor:default;
+	bottom:20px;
+	left: 250px;
+}
+
+#caption1{
+	background-color: rgb(172, 140, 140);
+	left:45%;
+	top:12%;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	font-size: 100%;
+	text-align: center;
+	border-radius: 10px;
+	padding: 5px;
+	display: none;
+}
+
+#tip{
+	left:24%;
+	top:73%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	cursor:default;
+	z-index: 4;
+	border-radius: 10px 0px 0px 0px;
+	border: 5px solid rgb(240,128,128);
+	border-style: solid none none solid;
+	transform:  rotate(45deg) rotateX(00deg) rotateY(0deg);
+	display: none;
+	animation: w 1s ease 0s infinite;
+}
+
+@keyframes w {
+    0% {
+        opacity: 0.2;
+    }
+	50%{
+		opacity: 1;
+	}
+    100% {
+		opacity: 0.2;
+    }
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}
+

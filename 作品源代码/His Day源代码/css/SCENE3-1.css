@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+pre {
+    position: fixed;
+    position: absolute;
+    z-index: 0;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+    transform-origin: center;
+    cursor: default;
+    animation: openScene 3s ease 0s 1;
+}
+
+.store {
+    width: 700px;
+    height: 500px;
+}
+
+.store .top {
+    width: 606px;
+    transform: translateX(-13px) translateY(36px) rotate(-20deg) rotateX(65deg) scale(1.5);
+}
+
+.store .name {
+    width: 500px;
+    height: 85px;
+    transform: translateX(95px) translateY(191px) rotate(-20deg) rotateX(30deg);
+}
+
+.store .decorateL {
+    width: 400px;
+    transform: translateX(48px) translateY(326px) rotate(130deg) rotateY(20deg) scale(0.5);
+
+}
+
+.store .door {
+    width: 500px;
+    transform: translateX(140px) translateY(211px) rotate(-12deg) scale(0.8);
+}
+
+.store .lineTop {
+    transform: translateX(142px) translateY(161px) rotate(-19deg) rotateX(10deg) scale(0.46);
+}
+
+.store .lineBot {
+    transform: translateX(165px) translateY(273px) rotate(-19deg) rotateX(10deg) scale(1);
+}
+
+.store .line {
+    transform: translateX(270px) translateY(163px) rotate(80deg) scale(0.54);
+}
+
+.store .text1 {
+    font-size: 45px;
+    position: absolute;
+    top: 185px;
+    left: 280px;
+    transform: rotate(-19deg);
+}
+
+.store .text2 {
+    font-size: 40px;
+    position: absolute;
+    top: 241px;
+    left: 271px;
+    transform: rotate(-19deg);
+}
+
+.transport .light {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+}
+
+.rlight {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 687px;
+}
+
+div[class^=R] {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    margin-left: 8px;
+}
+
+.Rred {
+    background-color: rgb(92, 1, 1);
+}
+
+.Ryellow {
+    background-color: rgb(236, 170, 84);
+    animation: twinkle 1s linear 0s infinite;
+}
+
+.Rgreen {
+    background-color: rgb(8, 59, 23);
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 1;
+        /* background-color: rgba(236, 170, 84 ,1); */
+    }
+
+    100% {
+        background-color: rgba(236, 170, 84, 0);
+    }
+}
+
+.roadL {
+    transform: translateX(-120px) rotate(-39deg);
+}
+
+.roadR {
+    transform: translateX(300px) rotate(-57deg);
+}
+
+.roadM {
+    transform: translateX(47px) rotate(-47deg);
+}
+
+.select button {
+    display: none;
+    position: absolute;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    width: 80px;
+    height: 50px;
+}
+
+.select button:hover {
+    cursor: pointer;
+}
+
+.select .help {
+    left: 600px;
+    color: #fff;
+}
+
+.select .nohelp {
+    left: 850px;
+    color: #fff;
+}
+
+#people {
+    position: absolute;
+    top: 466px;
+    left: 1181px;
+    transform: scale(1.2);
+    transition: all 3s;
+    border-radius: 1000px;
+}
+
+.consist {
+    height: 1px;
+    display: inline-block;
+}
+
+@keyframes Foot {
+    0% {}
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {}
+}
+
+#older:hover {
+    cursor: pointer;
+}
+
+.appreciate {
+    display: none;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 322px;
+    left: 491px;
+}
+
+.car_front {
+    z-index: 100;
+    width: 200px;
+    height: 216px;
+    position: absolute;
+    top: 112px;
+    left: 787px;
+    transform-origin: bottom center;
+    transform: skew(-0.05turn, 15deg) rotateY(60deg) scale(0.5);
+}
+
+.car_top {
+    z-index: 100;
+    position: absolute;
+    top: 120px;
+    left: 1021px;
+    transform: rotateX(-52deg) rotateY(26deg) rotateZ(-5deg) skew(-183.7turn, 48deg) scale(0.3);
+}
+
+.car_left {
+    z-index: 100;
+    position: absolute;
+    top: 266px;
+    left: 911px;
+    transform-origin: bottom center;
+    transform: rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+
+div[class^=wheel] {
+    z-index: 2;
+    position: absolute;
+    transform: rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+
+.wheel1 {
+    top: 233px;
+    left: 1029px;
+}
+
+.wheel2 {
+    top: 283px;
+    left: 961px;
+}
+
+.wheel3 {
+    top: 230px;
+    left: 974px;
+}
+
+.wheel4 {
+    top: 261px;
+    left: 916px;
+}
+
+.car_number {
+    z-index: 3;
+    position: absolute;
+    top: 300px;
+    left: 856px;
+    text-align: center;
+    width: 81px;
+    height: 20px;
+    font-size: 15px;
+    border: 2px solid #fff;
+    transform: rotateY(30deg) rotateZ(13deg) scale(0.8);
+}
+
+.car2 div[class^=wheel] {
+    transform: translateX(170px) rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+
+.car2 .car_front {
+    transform: translateX(170px) skew(-0.05turn, 15deg) rotateY(60deg) scale(0.5);
+}
+
+.car2 .car_left {
+    transform: translateX(170px) rotateX(-31deg) rotateY(55deg) scale(0.56);
+}
+
+.car2 .car_number {
+    transform: translateX(170px) rotateY(30deg) rotateZ(13deg) scale(0.8);
+}
+
+.car2 .car_top {
+    transform: translateX(170px) rotateX(-52deg) rotateY(26deg) rotateZ(-5deg) skew(-183.7turn, 48deg) scale(0.3);
+}
+
+.music {
+    position: absolute;
+    top: 38px;
+    right: 39px;
+    transform: scale(2);
+}
+
+.but {
+    cursor: pointer;
+    margin-bottom:100px;
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    position: absolute;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    display: none;
+    padding: 3px;
+    bottom: 0;
+    border: 8px;
+    border-style: outset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.car {
+    transform: translate(-0px,-550px);
+}
+.car2 {
+    transform: translate(10px,-550px);
+}
+.text {
+    white-space: nowrap;
+    /*文字不换行*/
+    background-color: gray;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    position: absolute;
+    cursor: default;
+    z-index: 4;
+    font-size: 200%;
+    text-align: center;
+    top: 655px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@keyframes openScene {
+    0% {
+        opacity: 0;
+    }
+    100% {
+		opacity: 1;
+    }
+}
